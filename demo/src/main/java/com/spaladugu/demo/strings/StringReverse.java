@@ -3,11 +3,11 @@ package com.spaladugu.demo.strings;
 public class StringReverse {
 
     public  String reverseString(String text){
-        String s = "";
+        StringBuilder s = new StringBuilder();
         for(int i= text.length()-1; i >= 0; i--) {
-          s = s +(text.charAt(i));
+          s = s.append(text.charAt(i));
         }
-        return s;
+        return s.toString();
     }
 
     public String reverseUsingStringBuffer(String text){
